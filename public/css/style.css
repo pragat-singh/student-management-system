@@ -1,0 +1,240 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #eef4ff, #f8fbff);
+  color: #1f2937;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #0d6efd, #0b5ed7);
+  padding: 16px 28px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  box-shadow: 0 4px 14px rgba(13, 110, 253, 0.18);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: all 0.25s ease;
+}
+
+.navbar a:hover {
+  background: rgba(255, 255, 255, 0.16);
+  transform: translateY(-1px);
+}
+
+.login-container {
+  width: 92%;
+  max-width: 1180px;
+  margin: 36px auto;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 24px;
+  margin-bottom: 24px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  color: #111827;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.summary-boxes {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.summary-box {
+  flex: 1;
+  min-width: 220px;
+  background: linear-gradient(135deg, #ffffff, #f8fbff);
+  padding: 24px;
+  border-radius: 18px;
+  border-left: 6px solid #0d6efd;
+  box-shadow: 0 8px 24px rgba(13, 110, 253, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.summary-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(13, 110, 253, 0.14);
+}
+
+.summary-box h3 {
+  margin-bottom: 10px;
+  color: #374151;
+  font-size: 18px;
+}
+
+.summary-box p {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #0d6efd;
+}
+
+.module-links {
+  margin-top: 10px;
+}
+
+.module-links a {
+  display: inline-block;
+  margin: 8px 12px 8px 0;
+  padding: 12px 18px;
+  background: linear-gradient(90deg, #0d6efd, #0b5ed7);
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: 0 6px 16px rgba(13, 110, 253, 0.18);
+  transition: all 0.25s ease;
+}
+
+.module-links a:hover {
+  background: linear-gradient(90deg, #0b5ed7, #094db1);
+  transform: translateY(-2px);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  margin-top: 20px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.08);
+}
+
+table th,
+table td {
+  padding: 14px 16px;
+  text-align: center;
+}
+
+table th {
+  background: linear-gradient(90deg, #0d6efd, #0b5ed7);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+table td {
+  border-bottom: 1px solid #e5e7eb;
+  color: #374151;
+}
+
+table tr:hover td {
+  background-color: #f8fbff;
+}
+
+form {
+  background: rgba(255, 255, 255, 0.97);
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  max-width: 520px;
+  border: 1px solid rgba(226, 232, 240, 0.85);
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #374151;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px 14px;
+  margin-top: 6px;
+  margin-bottom: 18px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: 14px;
+  background: #f9fafb;
+  transition: all 0.25s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #0d6efd;
+  outline: none;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.12);
+}
+
+button {
+  background: linear-gradient(90deg, #0d6efd, #0b5ed7);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  box-shadow: 0 8px 18px rgba(13, 110, 253, 0.18);
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #0b5ed7, #094db1);
+  transform: translateY(-2px);
+}
+
+.page-title {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 18px;
+  text-decoration: none;
+  color: #0d6efd;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.back-link:hover {
+  color: #094db1;
+  text-decoration: underline;
+}

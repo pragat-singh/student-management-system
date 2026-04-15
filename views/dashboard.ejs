@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="navbar">
+  <a href="/dashboard">Dashboard</a>
+  <a href="/add-student">Add Student</a>
+  <a href="/students">View Students</a>
+  <a href="/add-attendance">Add Attendance</a>
+  <a href="/attendance">View Attendance</a>
+  <a href="/add-marks">Add Marks</a>
+  <a href="/marks">View Marks</a>
+  <a href="/logout">Logout</a>
+</div>
+
+<div class="container">
+  <div class="card">
+    <h1 class="page-title">Admin Dashboard</h1>
+    <p>Welcome, <%= admin || "Admin" %></p>
+  </div>
+
+  <div class="summary-boxes">
+    <div class="summary-box">
+      <h3>Total Students</h3>
+      <p><%= totalStudents %></p>
+    </div>
+
+    <div class="summary-box">
+      <h3>Total Attendance Records</h3>
+      <p><%= totalAttendance %></p>
+    </div>
+
+    <div class="summary-box">
+      <h3>Total Marks Records</h3>
+      <p><%= totalMarks %></p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Student Management</h3>
+    <div class="module-links">
+      <a href="/add-student">Add Student</a>
+      <a href="/students">View Students</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Attendance Management</h3>
+    <div class="module-links">
+      <a href="/add-attendance">Add Attendance</a>
+      <a href="/attendance">View Attendance</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Marks Management</h3>
+    <div class="module-links">
+      <a href="/add-marks">Add Marks</a>
+      <a href="/marks">View Marks</a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Attendance</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="navbar">
+  <a href="/dashboard">Dashboard</a>
+  <a href="/add-student">Add Student</a>
+  <a href="/students">View Students</a>
+  <a href="/add-attendance">Add Attendance</a>
+  <a href="/attendance">View Attendance</a>
+  <a href="/add-marks">Add Marks</a>
+  <a href="/marks">View Marks</a>
+  <a href="/logout">Logout</a>
+</div>
+
+<div class="container">
+  <div class="card">
+    <h2 class="page-title">Add Attendance</h2>
+
+    <form action="/add-attendance" method="POST">
+
+      <label>Select Student</label>
+      <select name="student_id" required>
+        <% students.forEach(student => { %>
+          <option value="<%= student.id %>">
+            <%= student.name %> - <%= student.roll_no %>
+          </option>
+        <% }) %>
+      </select>
+
+      <label>Date</label>
+      <input type="date" name="date" required>
+
+      <label>Status</label>
+      <select name="status" required>
+        <option value="Present">Present</option>
+        <option value="Absent">Absent</option>
+      </select>
+
+      <button type="submit">Save Attendance</button>
+
+    </form>
+  </div>
+</div>
+
+</body>
+</html>

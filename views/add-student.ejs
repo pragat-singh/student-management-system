@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Student</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="navbar">
+  <a href="/dashboard">Dashboard</a>
+  <a href="/add-student">Add Student</a>
+  <a href="/students">View Students</a>
+  <a href="/add-attendance">Add Attendance</a>
+  <a href="/attendance">View Attendance</a>
+  <a href="/add-marks">Add Marks</a>
+  <a href="/marks">View Marks</a>
+  <a href="/logout">Logout</a>
+</div>
+
+<div class="container">
+  <div class="card">
+    <h2 class="page-title">Add Student</h2>
+
+    <form action="/add-student" method="POST">
+      <label>Student Name</label>
+      <input type="text" name="name" required>
+
+      <label>Roll Number</label>
+      <input type="text" name="roll_no" required>
+
+      <label>Course</label>
+      <input type="text" name="course" required>
+
+      <label>Semester</label>
+      <input type="text" name="semester" required>
+
+      <label>Email</label>
+      <input type="email" name="email" required>
+
+      <button type="submit">Add Student</button>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance List</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="navbar">
+  <a href="/dashboard">Dashboard</a>
+  <a href="/add-student">Add Student</a>
+  <a href="/students">View Students</a>
+  <a href="/add-attendance">Add Attendance</a>
+  <a href="/attendance">View Attendance</a>
+  <a href="/add-marks">Add Marks</a>
+  <a href="/marks">View Marks</a>
+  <a href="/logout">Logout</a>
+</div>
+
+<div class="container">
+  <div class="card">
+    <h2 class="page-title">Attendance List</h2>
+
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Student Name</th>
+        <th>Roll No</th>
+        <th>Date</th>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
+
+      <% attendance.forEach(record => { %>
+        <tr>
+          <td><%= record.id %></td>
+          <td><%= record.name %></td>
+          <td><%= record.roll_no %></td>
+          <td><%= record.date.toISOString().split("T")[0] %></td>
+          <td><%= record.status %></td>
+          <td>
+              <a href="/delete-attendance/<%= record.id %>" 
+                onclick="return confirm('Are you sure you want to delete this attendance record?')">
+                Delete
+              </a>
+          </td>
+        </tr>
+      <% }) %>
+    </table>
+  </div>
+</div>
+
+</body>
+</html>
