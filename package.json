@@ -4,7 +4,7 @@
   "main": "app.js",
   "start": "node app.js",
   "keywords": [],
-  "author": "",
+  "author": "Pragat Singh",
   "license": "ISC",
   "description": "",
   "dependencies": {
